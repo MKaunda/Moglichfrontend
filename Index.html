@@ -8,30 +8,61 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="style.css" rel="stylesheet" />
 </head>
-<body class="bg-[#D9D6CF]">
+  <body class="bg-[#D9D6CF] scroll-smooth">
+
 
 
 </body>
   <!-- Header Section -->
 <header id="main-header" class="fixed top-0 w-full text-black z-50  bg-black shadow-md">
-  <div class="max-w-6xl mx-auto px-4 py-1 flex justify-between items-center">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
 
     
     
-    <!-- Logo + Text -->
-      <div class="flex-shrink-0 mr-10">
+    <!-- Logo + Text 
+     <div class="flex-shrink-0 mr-10">
   <img src="MOGLICH LOGO.png" alt="Moglich Logo" class="h-16 w-31 object-cover rounded">
-</div>
-
+</div> -->
     
-    <!-- Navigation -->
-    <nav class="bg-black text-white py-5 space-x-6 container px-14 flex justify-between items-center">
-      <a href="#about" class="font-semibold hover:text-black-700">About Us</a>
-      <a href="#services" class="font-semibold hover:text-black-700">Services</a>
-      <a href="#how-it-works" class="font-semibold hover:text-black-700">How It Works</a>
-      <a href="#contact" class="font-semibold hover:text-black-700">Contact Us</a>
-      <a href="#signin" class="font-semibold hover:text-black-700">Sign In/Sign Up</a>
-    </nav>
+  <!-- Navigation -->
+<nav class="bg-black text-white font-['Roboto'] w-full">
+  <div class="flex items-center justify-between w-full h-20">
+
+    <!-- LOGO: absolutely flush to the left -->
+    <div class="ml-0 pl-0">
+      <img src="MOGLICH LOGO.png" alt="moglich logo" class="h-14 w-auto ml-0 pl-0 m-0 p-0" />
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="flex space-x-20 pr-4">
+      <a href="#about-us" class="rounded-md px-3 py-2 text-xl font-medium text-white hover:bg-gray-700">About Us</a>
+      <a href="#services" class="rounded-md px-3 py-2 text-xl font-medium text-white hover:bg-gray-700">Services</a>
+      <a href="#how-it-works" class="rounded-md px-3 py-2 text-xl font-medium text-white hover:bg-gray-700">How It Works</a>
+      <a href="#contact-us" class="rounded-md px-3 py-2 text-xl font-medium text-white hover:bg-gray-700">Contact Us</a>
+      <a href="#signin" class="rounded-md px-3 py-2 text-xl font-medium text-white hover:bg-gray-700">Sign In/Up</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile menu button -->
+<div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+  <button type="button" id="mobile-menu-button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset">
+    <span class="sr-only">Open main menu</span>
+    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+  </button>
+</div>
+<div class="hidden sm:hidden" id="mobile-menu">
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    <a href="#about-us" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-700">About Us</a>
+    <a href="#services" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-700">Services</a>
+    <a href="#how-it-works" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-700">How It Works</a>
+    <a href="#contact-us" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-700">Contact Us</a>
+    <a href="#signin" class="block px-3 py-2 text-base font-medium text-white hover:bg-gray-700">Sign In/Up</a>
+  </div>
+
 
 </header>
 
@@ -42,30 +73,45 @@
   
   <div class="relative container mx-auto px-4 text-center">
     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Empowering Local Fuel Traders with Innovative Solutions</h1>
-    <p class="text-lg font-bold text-white mb-6">Access bulk buying prices, affordable financing, and streamlined logistics—right at your fingertips.</p>
-    <a href="#about" class="mt-8 bg-orange-500 text-black px-6 py-3 rounded-lg hover:bg-orange-800 inline-block">Learn More</a>
+    <p class="text-lg font-bold text-white mb-6">Access bulk buying prices, cheaper transactional trade finance, and streamlined logistics—right at your fingertips.</p>
+    <a href="#how-it-works" class="mt-8 bg-orange-500 text-black px-6 py-3 rounded-lg hover:bg-orange-800 inline-block">Learn More</a>
+  </div>
+</section>
+
+<!-- Vision Section -->
+<section id="vision" class="py-10 bg-[slate-gray-100]">
+  <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-[#003152] text-center mb-4">Our Vision</h2>
+      <p class="text-lg text-black text-center mb-4">
+        We envision a thriving Zambian fuels sector where local Oil Marketing Companies (OMCs) have consistent access to product supply at bulk prices, affordable trade finance, and improved profit margins—without the need for large balance sheets. Through our integrated fuel supply chain platform, we're building a future of fair wealth creation and opportunity for local businesses and communities.
+      </p>
+    </div>
   </div>
 </section>
 
 
+
   <!-- About Section -->
    <!-- About Us Section -->
-<section id="about" class="py-10 bg-[slate-gray-100]">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-black text-center mb-4">About Us</h2>
-    <p class="text-lg text-black text-center mb-4">
-      Moglich is revolutionizing the Zambian fuel market by providing local Oil Marketing Companies (OMCs) with the tools and resources to compete with international players.
+<section id="about-us" class="py-10 rounded shadow bg-[slate-gray-100]">
+  <div class="container mx-auto px-4 rounded shadow">
+    <h2 class=" text-3xl font-bold text-[#003152] mb-4">About Us</h2>
+    <p class="text-lg text-black mb-4">
+      Moglich is revolutionizing the Zambian fuel market by providing local Oil Marketing Companies (OMCs) <br> with the tools and resources to compete with international players.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-[#003152] rounded shadow text-center">
+      <div class="bg-white p-6 rounded shadow text-center">
+        <img src="innovation.jpg" alt="Demand Aggregation Icon" class="mx-auto mb-4 w-20 h-20">
         <h3 class="text-xl font-semibold text-orange-500">Innovation</h3>
         <p class="text-black-700">Leveraging technology to transform the fuel industry.</p>
       </div>
-      <div class="bg-[#003152] p-6 rounded shadow text-center">
+      <div class="bg-white p-6 rounded shadow text-center">
+        <img src="empowerment.jpg" alt="Empowerment Icon" class="mx-auto mb-4 w-20 h-20">
         <h3 class="text-xl font-semibold text-orange-500">Empowerment</h3>
         <p class="text-black-700">Enabling local traders to succeed.</p>
       </div>
-      <div class="bg-[#003152] p-6 rounded shadow text-center">
+      <div class="bg-white p-6 rounded shadow text-center">
+        <img src="transparency.jpg" alt="Transparency Icon" class="mx-auto mb-4 w-20 h-20">
         <h3 class="text-xl font-semibold text-orange-500">Transparency</h3>
         <p class="text-black-700">Building trust through clear processes.</p>
       </div>
@@ -76,21 +122,24 @@
 
   <!-- Services Section -->
   <section id="services" class="py-6 bg-[slate-gray-100]">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-black text-center mb-2">Our Services</h2>
+    
+    <div class="container mx-auto px-4 rounded shadow">
+      <h2 class="text-3xl font-bold text-[#003152] mb-4">Our Services</h2>
+      <p class="text-lg text-black mb-6">We offer end-to-end support for local fuel traders by simplifying complex fuel <br> transactions, reducing costs, and giving you better control over deliveries.</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-[#003152] p-6 rounded shadow text-center">
-          <img src="aggregation.jpg" alt="Demand Aggregation Icon" class="mx-auto mb-4">
-          <h3 class="text-xl font-semibold text-orange-500">Demand Aggregation</h3>
+
+        <div class="bg-white p-6 rounded shadow text-center">
+          <img src="aggregation.jpg" alt="Demand Aggregation Icon" class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold mb-4 text-orange-500">Demand Aggregation</h3>
           <p class="text-black-700">Combine orders from local traders to secure bulk prices.</p>
         </div>
-        <div class="bg-[#003152] p-6 rounded shadow text-center">
-          <img src="financing.jpg" alt="Financing Solutions Icon" class="mb-4  h-27 w-27">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <img src="financing.jpg" alt="Financing Solutions Icon" class="mx-auto mb-4 w-20 h-20">
           <h3 class="text-xl font-semibold text-orange-500">Financing Solutions</h3>
           <p class="text-black-700">Access financing without high-value collateral.</p>
         </div>
-        <div class="bg-[#003152] p-6 rounded shadow text-center">
-          <img src="tanker.jpg" alt="Logistics Icon" class="mx-auto mb-2">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <img src="tanker.jpg" alt="Logistics Icon" class="mx-auto mb-4 w-20 h-20">
           <h3 class="text-xl font-semibold text-orange-500">Logistics & Tracking</h3>
           <p class="text-black-700">Integrated logistics with real-time tracking.</p>
         </div>
@@ -100,26 +149,27 @@
 
   <!-- How It Works Section -->
   <section id="how-it-works" class="py-6 bg-[slate-gray-100]">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-black text-center mb-4">How It Works</h2>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="container mx-auto px-4 rounded shadow">
+      <h2 class="text-3xl font-bold text-[#003152] mb-4">How It Works</h2>
+      <p class="text-lg text-black mb-6">Joining Moglich is simple. We've streamlined the process to help you access to <br> better prices, financing, and reliable delivery-all in a few easy steps.</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-         <div class="bg-[#003152] p-6 rounded shadow text-center">
+         <div class="bg-white p-6 rounded shadow text-center">
           <div class="bg-orange-500 text-black w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">1</div>
           <h3 class="text-lg font-semibold text-orange-500">Sign Up</h3>
           <p class="text-black-600">Create an account with Moglich.</p>
         </div>
-         <div class="bg-[#003152] p-6 rounded shadow text-center">
+         <div class="bg-white p-6 rounded shadow text-center">
           <div class="bg-orange-500 text-black w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">2</div>
           <h3 class="text-lg font-semibold text-orange-500">Aggregate Orders</h3>
           <p class="text-black-600">Submit and combine orders with other traders.</p>
         </div>
-         <div class="bg-[#003152] p-6 rounded shadow text-center">
+         <div class="bg-white p-6 rounded shadow text-center">
           <div class="bg-orange-500 text-black w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">3</div>
           <h3 class="text-lg font-semibold text-orange-500">Secure Financing</h3>
           <p class="text-black-600">Apply for financing secured by purchase orders.</p>
         </div>
-         <div class="bg-[#003152] p-6 rounded shadow text-center">
+         <div class="bg-white p-6 rounded shadow text-center">
           <div class="bg-orange-500 text-black w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">4</div>
           <h3 class="text-lg font-semibold text-orange-500">Track Deliveries</h3>
           <p class="text-black-600">Use the platform to track shipments.</p>
@@ -130,38 +180,39 @@
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="py-6 bg-[slate-gray-100]">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-navy-blue text-center mb-8">What Our Customers Say</h2>
+    <div class="container mx-auto px-4 rounded shadow">
+      <h2 class="text-3xl font-bold text-[#003152] mb-8">What Our Customers Say</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-[#003152] p-6 rounded shadow">
+        <div class="bg-white p-6 rounded shadow">
           <p class="text-black italic">"Moglich has transformed our business by giving us access to bulk prices and financing."</p>
           <p class="text-orange-500 font-semibold mt-4">- Local OMC, Zambia</p>
         </div>
-        <div class="bg-[#003152] p-6 rounded shadow">
+        <div class="bg-white p-6 rounded shadow">
           <p class="text-black italic">"The logistics tracking feature is a game-changer for our operations."</p>
           <p class="text-orange-500 font-semibold mt-4">- Fuel Trader, Zambia</p>
         </div>
       </div>
     </div>
-  </section>
+  </section
 
   <!-- Call to Action Section -->
-  <section id="cta" class="py-8 bg-[#003152] text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mt-4">Join Moglich Today</h2>
+  <section id="signin" class="py-6 px-4 bg-[slate-gray-100]">
+    <div class="w-full md:max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-[#003152] mt-4">Join Moglich Today</h2>
       <p class="text-lg mt-4">By signing up, you can start accessing bulk prices, financing, and streamlined logistics now.
       </p>
-      <a href="#signup" class="mt-8 bg-orange-500 text-black px-4 py-3 rounded-lg hover:bg-orange-800 inline-block">Get Started</a>
+      <a href="#signin" class="mt-8 bg-orange-500 text-black px-4 py-3 rounded-lg hover:bg-orange-800 inline-block">Get Started</a>
     </div>
   </section>
 
   <!-- Footer Section -->
+   <section id="contact-us">
   <footer class="bg-[#D9D6CF] text-black py-6">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 rounded shadow">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 class="text-lg font-semibold mb-2">
-            <a href="#contact" class="hover:underline">Contact Us</a>
+            <a href="#contact-us" class="hover:underline">Contact Us</a>
            </h3>
           <p>Lusaka, Zambia</p>
           <p>Phone: +260 123 456 789</p>
@@ -176,6 +227,7 @@
             <a href="#" class="hover:text-black-400">LinkedIn</a>
           </div>
         </div>
+    </dsection>
         <div>
           <h3 class="text-lg font-semibold mb-2">Legal</h3>
           <a href="#" class="block hover:text-black-400">Privacy Policy</a>
@@ -187,7 +239,17 @@
       </div>
     </div>
   </footer>
-
-  
 </body>
-</html>
+  </html>
+  <script>
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  // Toggle hamburger and close icons inside the buttona
+  const icons = mobileMenuButton.querySelectorAll('svg');
+  icons.forEach(icon => icon.classList.toggle('hidden'));
+});
+
+  </script>
