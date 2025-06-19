@@ -1,0 +1,10 @@
+ body {
+      font-family: 'Roboto', sans-serif;
+      background-color: timberwolf;
+    }
+    .hero-bg {
+      background-image: url('landing.jpg');
+      background-size: cover;
+      background-position: center;
+    
+    }
